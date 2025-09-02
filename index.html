@@ -1,30 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Turquastic Automation Project</title>
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; background-color: #f4f4f4; color: #333; }
-    .container { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    h1 { color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-    h3 { color: #555; }
-    p { margin-bottom: 10px; }
-    a { color: #007BFF; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px;
+      background-color: #f0f2f5;
+      color: #333;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      box-sizing: border-box;
+    }
+    h1, h2 {
+      color: #34495e;
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    h2 {
+      font-size: 1.5em;
+      border-color: #ecf0f1;
+    }
+    p, ul {
+      font-size: 1em;
+      color: #555;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "✓";
+      color: #27ae60;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #95a5a6;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Turquastic Automation Project</h1>
-    <p>
-      This application is a personal automation project developed to streamline content management across various social media platforms. Its primary purpose is to facilitate the seamless transfer and publication of visual content from a designated, user-owned Pinterest board to platforms such as Instagram, Facebook, and X.
-    </p>
-    <p>
-      All automation is performed in strict compliance with the respective platforms' API policies and terms of service. This project does not engage in any form of unauthorized data collection or content scraping.
-    </p>
-    <h3>Privacy Policy</h3>
-    <p>
-      For a full explanation of how this application handles data, please read our <a href="https://chtsrl.github.io/turquastic-app-privacy-policy/" target="_blank">Privacy Policy</a>.
-    </p>
-  </div>
+
+<div class="container">
+  <h1>Turquastic Automation Project</h1>
+  <p>
+    This application is a personal, non-commercial automation project designed to help content creators, small businesses, and individuals streamline their digital presence. Our core mission is to facilitate the efficient transfer and publication of visual content from a designated, user-owned Pinterest board to various social media platforms.
+  </p>
+
+  <h2>How It Works</h2>
+  <p>
+    The application acts as a secure intermediary, automating the content publishing workflow in a compliant and ethical manner.
+  </p>
+  <ul>
+    <li>Retrieves public visual assets (Pins) from a specified Pinterest board using the Pinterest API.</li>
+    <li>Publishes these assets to authenticated social media accounts on platforms such as Instagram, Facebook, and X.</li>
+    <li>Operates strictly within the usage policies and API limitations of each respective platform.</li>
+  </ul>
+
+  <h2>Our Commitment to Compliance</h2>
+  <p>
+    We prioritize user trust and ethical conduct. The application does not engage in unauthorized data collection, content scraping, or any form of spamming. All data handling is minimal and temporary, used solely for the purpose of content publication. We are fully compliant with relevant data protection regulations.
+  </p>
+
+  <p>
+    For more information on how this application handles data, please review our comprehensive 
+    <a href="./privacy-policy.html">Privacy Policy</a>.
+  </p>
+</div>
+
+<div class="footer">
+  &copy; 2025 Turquastic. All Rights Reserved.
+</div>
+
 </body>
 </html>
